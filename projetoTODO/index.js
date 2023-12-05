@@ -175,7 +175,7 @@ const conexao = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "root",
-    database: "todo-app",
+    database: "todo_app",
     port: 3306
 })
 
