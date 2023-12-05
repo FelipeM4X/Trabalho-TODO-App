@@ -9,6 +9,10 @@ app.get ( '/' ,  ( requisição ,  resposta )  =>  {
 app.engine ('handlebars',exphbs.engine)
 app.set ('view engine','handlebars')
 })
+app.get( '/',(requisicao, resposta )  =>  {
+    resposta.send ( "Olá, Mundo!" )
+    resposta.render('home')
+} )
 
 
 app.get( '/',(requisicao, resposta )  =>  {
